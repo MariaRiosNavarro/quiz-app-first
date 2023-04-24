@@ -11,10 +11,6 @@
   --nav-bg-color-secundary: darkgreen;
 }
 
-body {
-  width: 100%;
-}
-
 nav {
   position: fixed;
   bottom: 0;
@@ -31,4 +27,11 @@ nav {
 
 li {
   list-style: none;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--nav-bg-color);
+  padding: 3rem;
 }
