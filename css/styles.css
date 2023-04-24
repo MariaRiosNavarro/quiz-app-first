@@ -5,11 +5,37 @@
 :root {
   --primary-color: black;
   --dark-modus-color: white;
-  --bg-color: lightyellow;
+  --bg-color: rgb(246, 246, 172);
   --dark-modus-bgcolor: darkblue;
   --nav-bg-color: darkorange;
   --nav-bg-color-secundary: darkgreen;
 }
+
+body {
+  margin: 0;
+}
+
+/* header Styles */
+
+.header-title-and-logo-container {
+  background-color: var(--nav-bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 5rem;
+}
+
+.header-logo {
+  height: 2.5rem;
+  position: relative;
+  top: 1rem;
+  padding-left: 0.5rem;
+}
+
+/* navigation styles */
 
 nav {
   position: fixed;
@@ -21,17 +47,60 @@ nav {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
+  left: -1rem;
 }
 
 li {
   list-style: none;
 }
 
+/* main styles */
+
+main {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
 article {
   display: flex;
   flex-direction: column;
   border: 2px solid var(--nav-bg-color);
-  padding: 3rem;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 3.5rem;
+  height: 11rem;
+}
+
+.question {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.question-card {
+  position: relative;
+  z-index: -1;
+}
+
+.bookmarkt {
+  width: 2rem;
+  position: absolute;
+  right: 0;
+  top: -0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.answer {
+  position: absolute;
+  bottom: 2.5rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--nav-bg-color);
+}
+.answer:hover {
+  background-color: var(--nav-bg-color);
+  color: var(--primary-color);
 }
