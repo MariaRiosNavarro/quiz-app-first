@@ -133,3 +133,8 @@ a {
   background-color: orange;
 }
 
+/* js styles */
+
+.hide-answer + #answer-one {
+  display: none;
+}
