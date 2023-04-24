@@ -5,7 +5,7 @@
 :root {
   --primary-color: black;
   --dark-modus-color: white;
-  --bg-color: lightyellow;
+  --bg-color: rgb(246, 246, 172);
   --dark-modus-bgcolor: darkblue;
   --nav-bg-color: darkorange;
   --nav-bg-color-secundary: darkgreen;
@@ -94,7 +94,13 @@ article {
   padding: 0;
 }
 
-button {
+.answer {
   position: absolute;
   bottom: 2.5rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--nav-bg-color);
+}
+.answer:hover {
+  background-color: var(--nav-bg-color);
+  color: var(--primary-color);
 }
