@@ -103,7 +103,7 @@ article {
 }
 
 .answer:hover {
-  cursor: pointer;
+  background-color: blue;
 }
 
 .question-tags-container {
