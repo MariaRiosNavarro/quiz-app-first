@@ -122,7 +122,14 @@ span {
   padding: 0.15rem;
 }
 
-span:hover {
-  background-color: var(--nav-bg-color);
+a {
+  text-decoration: none;
   color: var(--primary-color);
 }
+
+/* hover doesnt work?? */
+
+.html-tag:hover {
+  background-color: orange;
+}
+
