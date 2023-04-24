@@ -1,12 +1,16 @@
-function showAnswer() {
-  const answerElement = document.getElementById("answer-one");
-  const answerButton = document.querySelector(".answer");
+// function showAnswer() {
+//   const answerParagraph = document.getElementById("answer-one");
+//   const answerButton = document.querySelector(".answer-one-button");
 
-  answerElement.innerHTML = "Hypertext Markup Language";
-  answerButton.classList.toggle("hide-answer");
+//   answerParagraph.innerHTML = "Hypertext Markup Language";
+//   console.log(answerElement);
+// }
+// FUNKTIONIERT NICHT
 
-  answerButton.onclick = function () {
-    answerElement.innerHTML = "";
-    answerButton.classList.toggle("hide-answer");
-  };
-}
+
+
+
+// document.getElementById("btn").onclick = function () {
+//   console.log("Hypertext Markup Language");
+// };
+// FUNKTIONIERT NICHT
