@@ -140,7 +140,7 @@ checken!!!!!!!*/
   color: white;
 }
 
-.switch {
+.settings-card__switch-label {
   position: absolute;
   right: 9rem;
   width: 64px;
@@ -148,7 +148,7 @@ checken!!!!!!!*/
   display: inline-block;
 }
 
-.dark-mode {
+.settings-card__switch-label__dark-mode-text {
   margin: 0;
   display: inline;
   padding: 0;
@@ -158,7 +158,7 @@ checken!!!!!!!*/
 
 /* Der graue Untergrund des Schalters */
 
-.switch span {
+.settings-card__switch-label span {
   position: absolute;
   background-color: #ccc;
   border-radius: 17px;
@@ -171,7 +171,7 @@ checken!!!!!!!*/
 }
 
 /* Der kreisrunde Button im Switch */
-.switch span::before {
+.settings-card__switch-label span::before {
   background-color: white;
   border-radius: 50%;
   content: "";
@@ -194,13 +194,13 @@ input:checked + span::before {
 
 /* Das input-Element des Switch muss noch verborgen werden */
 
-.switch input {
+.settings-card__switch-label input {
   display: none;
 }
 
 /* Um allerdings auch den Text Einstellung zum Switch zu ändern, wird der Switch von display: inline-block zu einem Grid-Container mit zwei Grid-Elementen in einer grid-template-area. */
 
-.switch {
+.settings-card__switch-label {
   position: relative;
   display: grid;
   grid-template-columns: 230px 64px;
@@ -210,24 +210,24 @@ input:checked + span::before {
 
 /* Dem Switch die zweite grid-area (switch) zuweisen und das Verhalten beim :checked-Zustand festlegen. */
 
-.switch span {
+.settings-card__switch-label span {
   background-color: #ccc;
   transition: 0.4s;
   grid-area: switch;
 }
 
-.switch p {
+.settings-card__switch-label p {
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 30px;
   margin-top: 0;
 }
 input:checked + p::before {
-  content: "Ein";
+  content: "ON";
 }
 
 input:checked ~ p::after {
-  content: " Ein";
+  content: " ON";
 }
 
 /* Ein Switch oder Schalter soll ja etwas bewirken. So ganz ohne Javascript bewältigt CSS das nur in wirklich einfachen Fällen, aber das Script muss sich jetzt nur noch auf das Verhalten konzentrieren.
