@@ -147,7 +147,7 @@ checken!!!!!!!*/
 /* Das label-Element */
 /*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
 
-body.dark{
+.dark{
   background-color: black;
   color: white;
 }
