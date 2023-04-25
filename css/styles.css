@@ -106,7 +106,7 @@ li {
   background-color: blue;
 }
 
-.question-card__tag-container {
+.question-card__tag-list {
   display: flex;
   position: absolute;
   bottom: -0.7rem;
