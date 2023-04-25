@@ -1,0 +1,57 @@
+.question-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--nav-bg-color);
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 3.5rem;
+  height: 11rem;
+}
+
+.question-card__question {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.question-card {
+  position: relative;
+  z-index: -1;
+}
+/* position relativ in den parent von den .question-card__bookmarkt oben um unten absolute für die bookmarks zu nutzen) */
+.question-card__bookmarkt {
+  width: 2rem;
+  position: absolute;
+  right: 0;
+  top: -0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.question-card__answer-button {
+  position: absolute;
+  bottom: 2.5rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--nav-bg-color);
+}
+
+.question-card__answer-button:hover {
+  background-color: blue;
+}
+
+.question-card__tag-list {
+  display: flex;
+  position: absolute;
+  bottom: -0.7rem;
+  justify-content: flex-start;
+  margin-left: 0.3rem;
+  width: 100%;
+  gap: 0.2rem;
+}
+.question-card__tag-list__list-item_link {
+  font-size: 14px;
+  padding-left: 0.2rem;
+  border: 1px solid var(--nav-bg-color);
+  padding: 0.15rem;
+}

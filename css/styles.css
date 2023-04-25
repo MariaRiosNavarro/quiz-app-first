@@ -1,61 +1,16 @@
-* {
-  box-sizing: border-box;
-}
+@import "global.css";
+@import "components/button.css";
+@import "components/header.css";
+@import "components/navigation.css";
+@import "components/questioncard.css";
 
-:root {
-  --primary-color: black;
-  --dark-modus-color: white;
-  --bg-color: rgb(246, 246, 172);
-  --dark-modus-bgcolor: darkblue;
-  --nav-bg-color: darkorange;
-  --nav-bg-color-secundary: darkgreen;
-}
 
-body {
-  margin: 0;
-}
 
 /* header Styles */
 
-.header-card {
-  background-color: var(--nav-bg-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  height: 5rem;
-}
-
-.header-card__logo {
-  height: 2.5rem;
-  position: relative;
-  top: 1rem;
-  padding-left: 0.5rem;
-}
 
 /* navigation styles */
 
-.nav-bar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: var(--nav-bg-color);
-}
-
-.nav-bar__list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  left: -1rem;
-}
-
-li {
-  list-style: none;
-}
 
 /* main styles */
 
@@ -64,172 +19,15 @@ li {
   margin-top: 6rem;
 }
 
-.question-card {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid var(--nav-bg-color);
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 3.5rem;
-  height: 11rem;
-}
 
-.question-card__question {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-align: center;
-}
-
-.question-card {
-  position: relative;
-  z-index: -1;
-}
-/* position relativ in den parent von den .question-card__bookmarkt oben um unten absolute für die bookmarks zu nutzen) */
-.question-card__bookmarkt {
-  width: 2rem;
-  position: absolute;
-  right: 0;
-  top: -0.4rem;
-  margin: 0;
-  padding: 0;
-}
-
-.question-card__answer-button {
-  position: absolute;
-  bottom: 2.5rem;
-  background-color: transparent;
-  border: 0.2rem solid var(--nav-bg-color);
-}
-
-.question-card__answer-button:hover {
-  background-color: blue;
-}
-
-.question-card__tag-list {
-  display: flex;
-  position: absolute;
-  bottom: -0.7rem;
-  justify-content: flex-start;
-  margin-left: 0.3rem;
-  width: 100%;
-  gap: 0.2rem;
-}
-.question-card__tag-list__list-item_link {
-  font-size: 14px;
-  padding-left: 0.2rem;
-  border: 1px solid var(--nav-bg-color);
-  padding: 0.15rem;
-}
 
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-/* User page Styles */
 
-/* VON: https://www.mediaevent.de/tutorial/css-switch.html#:~:text=Die%20Einstellungen%20der%20mobilen%20Ger%C3%A4te,Switch%2DButtons%20auf%20die%20Webseite. 
-checken!!!!!!!*/
 
-/* Das label-Element */
-/*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
 
-.dark {
-  background-color: black;
-  color: white;
-}
 
-.settings-card__switch-label {
-  position: absolute;
-  right: 9rem;
-  width: 64px;
-  height: 34px;
-  display: inline-block;
-}
 
-.settings-card__switch-label__dark-mode-text {
-  margin: 0;
-  display: inline;
-  padding: 0;
-  position: absolute;
-  left: 4rem;
-}
-
-/* Der graue Untergrund des Schalters */
-
-.settings-card__switch-label span {
-  position: absolute;
-  background-color: #ccc;
-  border-radius: 17px;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: background-color 0.4s;
-}
-
-/* Der kreisrunde Button im Switch */
-.settings-card__switch-label span::before {
-  background-color: white;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  left: 4px;
-  bottom: 4px;
-  height: 26px;
-  width: 26px;
-}
-
-/* Damit der Schalter bei einem Klick nach rechts rutscht, kommt die Checkbox zum Einsatz. Der Hintergrund des Schalters wird bei einem Klick Grün und der runde Button bewegt sich nach rechts. */
-
-input:checked + span {
-  background-color: black;
-}
-
-input:checked + span::before {
-  transform: translateX(30px);
-}
-
-/* Das input-Element des Switch muss noch verborgen werden */
-
-.settings-card__switch-label input {
-  display: none;
-}
-
-/* Um allerdings auch den Text Einstellung zum Switch zu ändern, wird der Switch von display: inline-block zu einem Grid-Container mit zwei Grid-Elementen in einer grid-template-area. */
-
-.settings-card__switch-label {
-  position: relative;
-  display: grid;
-  grid-template-columns: 230px 64px;
-  grid-template-rows: 34px;
-  grid-template-areas: "settings switch";
-}
-
-/* Dem Switch die zweite grid-area (switch) zuweisen und das Verhalten beim :checked-Zustand festlegen. */
-
-.settings-card__switch-label span {
-  background-color: #ccc;
-  transition: 0.4s;
-  grid-area: switch;
-}
-
-.settings-card__switch-label p {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  height: 30px;
-  margin-top: 0;
-}
-input:checked + p::before {
-  content: "ON";
-}
-
-input:checked ~ p::after {
-  content: " ON";
-}
-
-/* Ein Switch oder Schalter soll ja etwas bewirken. So ganz ohne Javascript bewältigt CSS das nur in wirklich einfachen Fällen, aber das Script muss sich jetzt nur noch auf das Verhalten konzentrieren.
-
-Der Schalter kann an beliebigen Stellen eingesetzt werden, aber die CSS-Klasse switch wird schnell zur Falle. Wenn der Switch-Button in anderen Seiten benutzt wird, kann der Name der Klasse mit Libraries kollidieren. */

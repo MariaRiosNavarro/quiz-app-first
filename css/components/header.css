@@ -1,0 +1,17 @@
+.header-card {
+  background-color: var(--nav-bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 5rem;
+}
+
+.header-card__logo {
+  height: 2.5rem;
+  position: relative;
+  top: 1rem;
+  padding-left: 0.5rem;
+}

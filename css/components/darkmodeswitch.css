@@ -1,0 +1,97 @@
+/* Das label-Element */
+/*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.settings-card__switch-label {
+  position: absolute;
+  right: 9rem;
+  width: 64px;
+  height: 34px;
+  display: inline-block;
+}
+
+.settings-card__switch-label__dark-mode-text {
+  margin: 0;
+  display: inline;
+  padding: 0;
+  position: absolute;
+  left: 4rem;
+}
+
+/* Der graus Untergrund des Schalters */
+
+.settings-card__switch-label span {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.4s;
+}
+
+/* Der kreisrunde Button im Switch */
+.settings-card__switch-label span::before {
+  background-color: var(--nav-bg-color);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+}
+
+/* Damit der Schalter bei einem Klick nach rechts rutscht, kommt die Checkbox zum Einsatz. Der Hintergrund des Schalters wird bei einem Klick schwarz und der runde Button bewegt sich nach rechts. */
+
+input:checked + span {
+  background-color: black;
+}
+
+input:checked + span::before {
+  transform: translateX(30px);
+}
+
+/* Das input-Element des Switch muss noch verborgen werden */
+
+.settings-card__switch-label input {
+  display: none;
+}
+
+/* Um allerdings auch den Text Einstellung zum Switch zu ändern, wird der Switch von display: inline-block zu einem Grid-Container mit zwei Grid-Elementen in einer grid-template-area. */
+
+.settings-card__switch-label {
+  position: relative;
+  display: grid;
+  grid-template-columns: 230px 64px;
+  grid-template-rows: 34px;
+  grid-template-areas: "settings switch";
+}
+
+/* Dem Switch die zweite grid-area (switch) zuweisen und das Verhalten beim :checked-Zustand festlegen. */
+
+.settings-card__switch-label span {
+  background-color: #ccc;
+  transition: 0.4s;
+  grid-area: switch;
+}
+
+.settings-card__switch-label p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 30px;
+  margin-top: 0;
+}
+input:checked + p::before {
+  content: "ON";
+}
+
+input:checked ~ p::after {
+  content: " ON";
+}
