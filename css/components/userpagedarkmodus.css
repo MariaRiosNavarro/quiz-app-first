@@ -1,3 +1,23 @@
+.user-card,
+.settings-card {
+  border: 2px solid var(--nav-bg-color);
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 3.5rem;
+  height: 12.5rem;
+}
+
+.user-card {
+  display: grid;
+  flex-wrap: wrap;
+  flex: ;
+  justify-content: center;
+
+}
+
+
+/*Dark Mode*/
 /* Das label-Element */
 /*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
 

@@ -3,6 +3,7 @@
 @import "components/header.css";
 @import "components/navigation.css";
 @import "components/questioncard.css";
+@import "components/userpagedarkmodus.css";
 
 .main-card {
   margin-bottom: 6rem;
