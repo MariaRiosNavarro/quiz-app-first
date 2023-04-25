@@ -4,30 +4,12 @@
 @import "components/navigation.css";
 @import "components/questioncard.css";
 
-
-
-/* header Styles */
-
-
-/* navigation styles */
-
-
-/* main styles */
-
 .main-card {
   margin-bottom: 6rem;
   margin-top: 6rem;
 }
 
-
-
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
-
-
-
-
-
-
