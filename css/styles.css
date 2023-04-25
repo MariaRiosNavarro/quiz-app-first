@@ -17,7 +17,7 @@ body {
 
 /* header Styles */
 
-.header-title-and-logo-container {
+.header-card {
   background-color: var(--nav-bg-color);
   position: fixed;
   top: 0;
@@ -28,7 +28,7 @@ body {
   height: 5rem;
 }
 
-.header-logo {
+.header-card__logo {
   height: 2.5rem;
   position: relative;
   top: 1rem;
@@ -37,7 +37,7 @@ body {
 
 /* navigation styles */
 
-nav {
+.nav-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -45,7 +45,7 @@ nav {
   background-color: var(--nav-bg-color);
 }
 
-.nav-list {
+.nav-bar__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,12 +59,12 @@ li {
 
 /* main styles */
 
-main {
+.main-card {
   margin-bottom: 6rem;
   margin-top: 6rem;
 }
 
-article {
+.question-card {
   display: flex;
   flex-direction: column;
   border: 2px solid var(--nav-bg-color);
@@ -75,7 +75,7 @@ article {
   height: 11rem;
 }
 
-.question {
+.question-card__question {
   margin-bottom: 0;
   padding-bottom: 0;
   text-align: center;
@@ -85,8 +85,8 @@ article {
   position: relative;
   z-index: -1;
 }
-
-.bookmarkt {
+/* position relativ in den parent von den .question-card__bookmarkt oben um unten absolute für die bookmarks zu nutzen) */
+.question-card__bookmarkt {
   width: 2rem;
   position: absolute;
   right: 0;
@@ -95,18 +95,18 @@ article {
   padding: 0;
 }
 
-.answer {
+.question-card__answer-button {
   position: absolute;
   bottom: 2.5rem;
   background-color: transparent;
   border: 0.2rem solid var(--nav-bg-color);
 }
 
-.answer:hover {
+.question-card__answer-button:hover {
   background-color: blue;
 }
 
-.question-tags-container {
+.question-card__tag-container {
   display: flex;
   position: absolute;
   bottom: -0.7rem;
@@ -127,18 +127,6 @@ a {
   color: var(--primary-color);
 }
 
-/* hover doesnt work?? */
-
-.html-tag:hover {
-  background-color: orange;
-}
-
-/* js styles */
-
-.hide-answer + #answer-one {
-  display: none;
-}
-
 /* User page Styles */
 
 /* VON: https://www.mediaevent.de/tutorial/css-switch.html#:~:text=Die%20Einstellungen%20der%20mobilen%20Ger%C3%A4te,Switch%2DButtons%20auf%20die%20Webseite. 
@@ -147,12 +135,10 @@ checken!!!!!!!*/
 /* Das label-Element */
 /*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
 
-.dark{
+.dark {
   background-color: black;
   color: white;
 }
-
-
 
 .switch {
   position: absolute;
@@ -198,9 +184,6 @@ checken!!!!!!!*/
 
 /* Damit der Schalter bei einem Klick nach rechts rutscht, kommt die Checkbox zum Einsatz. Der Hintergrund des Schalters wird bei einem Klick Grün und der runde Button bewegt sich nach rechts. */
 
-
-
-
 input:checked + span {
   background-color: black;
 }
@@ -209,44 +192,42 @@ input:checked + span::before {
   transform: translateX(30px);
 }
 
-
 /* Das input-Element des Switch muss noch verborgen werden */
 
 .switch input {
-	display: none;
+  display: none;
 }
 
 /* Um allerdings auch den Text Einstellung zum Switch zu ändern, wird der Switch von display: inline-block zu einem Grid-Container mit zwei Grid-Elementen in einer grid-template-area. */
 
 .switch {
-	position: relative;
-	display: grid;
-	grid-template-columns: 230px 64px;
-	grid-template-rows: 34px;
-	grid-template-areas: "settings switch";
+  position: relative;
+  display: grid;
+  grid-template-columns: 230px 64px;
+  grid-template-rows: 34px;
+  grid-template-areas: "settings switch";
 }
 
 /* Dem Switch die zweite grid-area (switch) zuweisen und das Verhalten beim :checked-Zustand festlegen. */
 
 .switch span {
-	background-color: #ccc;
-	…
-	transition: .4s;
-	grid-area: switch;
+  background-color: #ccc;
+  transition: 0.4s;
+  grid-area: switch;
 }
 
-.switch p { 
-	text-transform: uppercase; 
-	letter-spacing: 1px;
-	height: 30px;
-	margin-top: 0;
+.switch p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 30px;
+  margin-top: 0;
 }
 input:checked + p::before {
-	content: "Ein";
+  content: "Ein";
 }
 
 input:checked ~ p::after {
-	content: " Ein";
+  content: " Ein";
 }
 
 /* Ein Switch oder Schalter soll ja etwas bewirken. So ganz ohne Javascript bewältigt CSS das nur in wirklich einfachen Fällen, aber das Script muss sich jetzt nur noch auf das Verhalten konzentrieren.
