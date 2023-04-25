@@ -147,11 +147,16 @@ checken!!!!!!!*/
 /* Das label-Element */
 /*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
 
+body.dark{
+  background-color: black;
+  color: white;
+}
 
-/* CHECK later */
+
+
 .switch {
   position: absolute;
-  right: 7rem;
+  right: 9rem;
   width: 64px;
   height: 34px;
   display: inline-block;
@@ -162,7 +167,7 @@ checken!!!!!!!*/
   display: inline;
   padding: 0;
   position: absolute;
-  right: 1rem;
+  left: 4rem;
 }
 
 /* Der graue Untergrund des Schalters */
@@ -193,8 +198,11 @@ checken!!!!!!!*/
 
 /* Damit der Schalter bei einem Klick nach rechts rutscht, kommt die Checkbox zum Einsatz. Der Hintergrund des Schalters wird bei einem Klick Grün und der runde Button bewegt sich nach rechts. */
 
+
+
+
 input:checked + span {
-  background-color: darkgreen;
+  background-color: black;
 }
 
 input:checked + span::before {
