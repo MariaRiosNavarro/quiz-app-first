@@ -115,7 +115,7 @@ li {
   width: 100%;
   gap: 0.2rem;
 }
-span {
+.question-card__tag-list__list-item_link {
   font-size: 14px;
   padding-left: 0.2rem;
   border: 1px solid var(--nav-bg-color);
