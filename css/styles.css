@@ -138,3 +138,109 @@ a {
 .hide-answer + #answer-one {
   display: none;
 }
+
+/* User page Styles */
+
+/* VON: https://www.mediaevent.de/tutorial/css-switch.html#:~:text=Die%20Einstellungen%20der%20mobilen%20Ger%C3%A4te,Switch%2DButtons%20auf%20die%20Webseite. 
+checken!!!!!!!*/
+
+/* Das label-Element */
+/*  Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+
+
+/* CHECK later */
+.switch {
+  position: absolute;
+  right: 7rem;
+  width: 64px;
+  height: 34px;
+  display: inline-block;
+}
+
+.dark-mode {
+  margin: 0;
+  display: inline;
+  padding: 0;
+  position: absolute;
+  right: 1rem;
+}
+
+/* Der graue Untergrund des Schalters */
+
+.switch span {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.4s;
+}
+
+/* Der kreisrunde Button im Switch */
+.switch span::before {
+  background-color: white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+}
+
+/* Damit der Schalter bei einem Klick nach rechts rutscht, kommt die Checkbox zum Einsatz. Der Hintergrund des Schalters wird bei einem Klick Grün und der runde Button bewegt sich nach rechts. */
+
+input:checked + span {
+  background-color: darkgreen;
+}
+
+input:checked + span::before {
+  transform: translateX(30px);
+}
+
+
+/* Das input-Element des Switch muss noch verborgen werden */
+
+.switch input {
+	display: none;
+}
+
+/* Um allerdings auch den Text Einstellung zum Switch zu ändern, wird der Switch von display: inline-block zu einem Grid-Container mit zwei Grid-Elementen in einer grid-template-area. */
+
+.switch {
+	position: relative;
+	display: grid;
+	grid-template-columns: 230px 64px;
+	grid-template-rows: 34px;
+	grid-template-areas: "settings switch";
+}
+
+/* Dem Switch die zweite grid-area (switch) zuweisen und das Verhalten beim :checked-Zustand festlegen. */
+
+.switch span {
+	background-color: #ccc;
+	…
+	transition: .4s;
+	grid-area: switch;
+}
+
+.switch p { 
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+	height: 30px;
+	margin-top: 0;
+}
+input:checked + p::before {
+	content: "Ein";
+}
+
+input:checked ~ p::after {
+	content: " Ein";
+}
+
+/* Ein Switch oder Schalter soll ja etwas bewirken. So ganz ohne Javascript bewältigt CSS das nur in wirklich einfachen Fällen, aber das Script muss sich jetzt nur noch auf das Verhalten konzentrieren.
+
+Der Schalter kann an beliebigen Stellen eingesetzt werden, aber die CSS-Klasse switch wird schnell zur Falle. Wenn der Switch-Button in anderen Seiten benutzt wird, kann der Name der Klasse mit Libraries kollidieren. */
