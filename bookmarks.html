@@ -9,102 +9,183 @@
     <title>Document</title>
   </head>
   <body data-js="js-body">
-    <header>
-      <div class="header-title-and-logo-container">
-        <h1 class="title">Quiz App</h1>
-        <img src="assets/icons8-idea.svg" alt="logo" class="header-logo" />
-      </div>
+    <header class="header-card">
+      <h1 class="header-card__title">Quiz App</h1>
+      <img src="assets/icons8-idea.svg" alt="logo" class="header-card__logo" />
     </header>
-    <main class="main-container">
+    <main class="main-card">
       <section>
         <article class="question-card">
-          <h4 class="question">
-            Wie kann man Flex-Elemente in einer Zeile anordnen?
-          </h4>
+          <h4 class="question-card__question">What does HTML stand for?</h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button type="submit" class="answer">Show Answer</button>
+          <p data-js="answer-one"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+
+           <!-- repair later!! -->
+           
+            <p>
+                <span class="question-card__tag-container_html"> #HTML</span>
+              </p></a
+            >
+            <a href="#"
+              ><p>
+                <span class="question-card__tag-container_css">#CSS</span>
+              </p></a
+            >
+            <a href="#"
+              ><p>
+                <span class="question-card__tag-container_flexbox"
+                  >#Flexbox</span
+                >
+              </p></a
+            >
+          </ul>
+          <!-- Answer: Hypertext Markup Language. -->
         </article>
         <article class="question-card">
-          <h4 class="question">
-            Welche CSS-Eigenschaft wird verwendet, um ein Element als
-            Flex-Container zu definieren?
-          </h4>
+          <h4 class="question-card__question">What is the purpose of CSS?</h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button type="submit" class="answer">Show Answer</button>
+          <p data-js="answer-two"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+          <!-- Answer: To style and layout web pages. -->
         </article>
         <article class="question-card">
-          <h4 class="question">
-            Wie wird ein Element als Flex-Container zentriert?
+          <h4 class="question-card__question">
+            What is the syntax for commenting in HTML?
           </h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button type="submit" class="answer">Show Answer</button>
+          <p data-js="answer-tree"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+          <!-- Answer:-->
+          <!--comment here -->
         </article>
         <article class="question-card">
-          <h4 class="question">
-            Was ist der Unterschied zwischen "flex-wrap: nowrap" und "flex-wrap:
-            wrap"?
+          <h4 class="question-card__question">
+            How do you link an external CSS file to an HTML document?
           </h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button onclick="" class="answer">Show Answer</button>
+          <p data-js="answer-four"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+          <!-- nswer: <link rel="stylesheet" href="styles.css"> -->
         </article>
         <article class="question-card">
-          <h4 class="question">
-            Was ist der Unterschied zwischen "flex-direction: row" und
-            "flex-direction: column"?
+          <h4 class="question-card__question">
+            What is the purpose of the "alt" attribute in an image tag?
           </h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button type="submit" class="answer">Show Answer</button>
+          <p data-js="answer-five"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+          <!-- Answer: To provide alternative text for screen readers and SEO. -->
         </article>
         <article class="question-card">
-          <h4 class="question">
-            Wie wird ein Flex-Element in der Mitte des Flex-Containers
-            ausgerichtet?
-          </h4>
+          <h4 class="question-card__question">What is the box model in CSS?</h4>
           <img
             src="assets/icons8-add-bookmark.svg"
             alt="bookmarkt logo"
-            class="bookmarkt"
+            class="question-card__bookmarkt"
           />
-          <button type="submit" class="answer">Show Answer</button>
+          <p data-js="answer-five"></p>
+          <button onclick type="button" class="question-card__answer-button">
+            Show Answer
+          </button>
+          <ul class="question-card__tag-list">
+            <li class="question-card__tag-list__list-item">
+              <a href="#" class="question-card__tag-list__list-item_link html">#HTML</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link css">#CSS</a></li>
+            <li class="question-card__tag-list__list-item ">
+              <a href="#" class="question-card__tag-list__list-item_link flexbox">#Flexbox</a></li>
+          </ul>
+          <!-- Answer: A layout model that defines an element's content, padding, border, and margin. -->
         </article>
       </section>
     </main>
     <footer>
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html">
-              <img src="assets/icons8-home.svg" alt="Home Logo"
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list__item">
+            <a href="index.html" class="nav-bar__list__item__link">
+              <img src="assets/icons8-home.svg" alt="Home Logo" class="nav-bar__list__item__link_image"
             /></a>
           </li>
-          <li class="nav-item">
-            <a href="bookmarks.html">
-              <img src="assets/icons8-bookmark.svg" alt="Bookmark Logo"
+          <li class="nav-bar__list__item">
+            <a href="bookmarks.html" class="nav-bar__list__item__link">
+              <img src="assets/icons8-bookmark.svg" alt="Bookmark Logo" class="nav-bar__list__item__link_image"
             /></a>
           </li>
-          <li class="nav-item">
-            <a href="user.html">
-              <img src="assets/icons8-contacts.svg" alt="User Logo"
+          <li class="nav-bar__list__item">
+            <a href="user.html" class="nav-bar__list__item__link">
+              <img src="assets/icons8-contacts.svg" alt="User Logo" class="nav-bar__list__item__link_image"
             /></a>
           </li>
         </ul>
