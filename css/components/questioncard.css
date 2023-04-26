@@ -56,7 +56,7 @@
   padding: 0.15rem;
 }
 
-/* add style to the hidden answer p */
+/* add style to the answer p */
 
 .question-card__answer--hidden {
   display: none;
