@@ -1,7 +1,7 @@
 // -------------glogal js-----------------------------
 // const body = document.querySelector('[data-js="js-body"]');
 
-// // ------------user page: darkmode switch--------------
+// ------------user page: darkmode switch--------------
 
 // const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
 
