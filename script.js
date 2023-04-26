@@ -1,8 +1,9 @@
 // glogal js
 
-// const body = document.querySelector('[data-js="js-body"]');
+const body = document.querySelector('[data-js="js-body"]');
 
 // // user page: darkmode switch
+
 // const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
 
 // toggleDarkmode.addEventListener("click", () => {
@@ -22,5 +23,5 @@ const answerOne = document.querySelector('[data-js="answer-one"]');
 const answerButton = document.querySelector('[data-js="answer-button-one"]');
 
 answerButton.addEventListener("click", () => {
-  answerOne.classList.remove("hidden");
+  answerOne.classList.toggle("hidden");
 });
