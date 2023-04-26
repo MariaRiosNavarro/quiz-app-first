@@ -1,11 +1,7 @@
-
-
 // glogal js
 
 const body = document.querySelector('[data-js="js-body"]');
-
-
-
+const answerButton = document.querySelector();
 // user page: darkmode switch
 const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
 
@@ -18,8 +14,12 @@ toggleDarkmode.addEventListener("click", () => {
 // event übertragber für alle seiten.
 // title in schwarz lassen
 
-
 // Question-answer tests
 
+// Warning speziall case  to JS-another structure!!! I have a pre inside the p!! in question 3 and 4 -->
 
-
+const answerOne = document.querySelector('[data-js="answer-one"]');
+ 
+answerOne.addEventListener("click", () =>  {
+  answerOne.classList.toggle("hidden");
+}); 
