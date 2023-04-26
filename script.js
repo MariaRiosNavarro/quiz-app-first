@@ -23,9 +23,9 @@ toggleDarkmode.addEventListener("click", () => {
 // ???????WHY THAT DOESNT WORK?????????
 
 const answerOne = document.querySelector('[data-js="answer-one"]');
-const answerButton = document.querySelector('[data-js="answer-button-one"]');
+const answerButtonOne = document.querySelector('[data-js="answer-button-one"]');
 
-answerButton.addEventListener("click", () => {
+answerButtonOne.addEventListener("click", () => {
   answerOne.classList.toggle("question-card__answer--hidden");
 });
 
