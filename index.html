@@ -4,232 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="/index.js" defer></script>
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="/script.js" defer></script>
   </head>
-  <body data-js="js-body">
+  <body>
     <header class="header-card">
       <h1 class="header-card__title">Quiz App</h1>
       <img src="assets/icons8-idea.svg" alt="logo" class="header-card__logo" />
     </header>
-    <main class="main-card">
-      <section class="main-card__section">
-        <article class="question-card">
-          <h4 class="question-card__question">What does HTML stand for?</h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <!-- first answer and button -->
-          <p class="question-card__answer" data-js="answer-one" >
-            Hypertext Markup Language
-          </p>
-          <button type="button" data-js="answer-button-one" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <button data-js="test-button">TEST</button>
-          <!-- Tags of first question -->
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer: Hypertext Markup Language. -->
-        </article>
-        <article class="question-card">
-          <h4 class="question-card__question">What is the purpose of CSS?</h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <p class="question-card__answer" data-js="answer-two" hidden>
-            To style and layout web pages.
-          </p>
-          <button onclick type="button" data-js="answer-button" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer: To style and layout web pages. -->
-        </article>
-        <article class="question-card">
-          <h4 class="question-card__question">
-            What is the syntax for commenting in HTML?
-          </h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <p class="question-card__answer" data-js="answer-tree" >
-            <pre class="question-card__answer__code" hidden>&lt;!-- comment here --&gt;</pre>
-          </p>
-
-          <!-- speziall case here above to JS-another structure!!! I have a pre inside the p!! -->
-          <button onclick type="button" data-js="answer-button" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer:-->
-          <!--comment here -->
-        </article>
-        <article class="question-card">
-          <h4 class="question-card__question">
-            How do you link an external CSS file to an HTML document?
-          </h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <p class="question-card__answer" data-js="answer-four">
-            <pre class="question-card__answer__code" hidden>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
-          </p>
-
-          <!-- speziall case here above to JS-another structure!!! I have a pre inside the p!! -->
-          <button onclick type="button" data-js="answer-button" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer: <link rel="stylesheet" href="styles.css"> -->
-        </article>
-        <article class="question-card">
-          <h4 class="question-card__question">
-            What is the purpose of the "alt" attribute in an image tag?
-          </h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <p class="question-card__answer" data-js="answer-five" hidden>To provide alternative text for screen readers and SEO.</p>
-          <button onclick type="button" data-js="answer-button" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer: To provide alternative text for screen readers and SEO. -->
-        </article>
-        <article class="question-card">
-          <h4 class="question-card__question">What is the box model in CSS?</h4>
-          <img
-            src="assets/icons8-add-bookmark.svg"
-            alt="bookmarkt logo"
-            class="question-card__bookmarkt"
-          />
-          <p class="question-card__answer" data-js="answer-five" hidden>A layout model that defines an element's content, padding, border, and margin.</p>
-          <button onclick type="button" data-js="answer-button" class="question-card__answer-button">
-            Show Answer
-          </button>
-          <ul class="question-card__tag-list">
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link html"
-                >#HTML</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a href="#" class="question-card__tag-list__list-item_link css"
-                >#CSS</a
-              >
-            </li>
-            <li class="question-card__tag-list__list-item">
-              <a
-                href="#"
-                class="question-card__tag-list__list-item_link flexbox"
-                >#Flexbox</a
-              >
-            </li>
-          </ul>
-          <!-- Answer: A layout model that defines an element's content, padding, border, and margin. -->
-        </article>
-      </section>
+    <main>
+      <article class="question-card">
+        <h4 class="question-card__question">What does HTML stand for?</h4>
+        <img
+          src="assets/icons8-add-bookmark.svg"
+          alt="bookmarkt logo"
+          class="question-card__bookmarkt"
+        />
+        <p class="question-card__answer" data-js="answer-one">
+          Hypertext Markup Language
+        </p>
+        <button
+          data-js="answer-button-one"
+          class="question-card__answer-button"
+        >
+          Show Answer
+        </button>
+        <ul class="question-card__tag-list">
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link html"
+              >#HTML</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link css"
+              >#CSS</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link flexbox"
+              >#Flexbox</a
+            >
+          </li>
+        </ul>
+      </article>
+      <article class="question-card">
+        <h4 class="question-card__question">What is the purpose of CSS?</h4>
+        <img
+          src="assets/icons8-add-bookmark.svg"
+          alt="bookmarkt logo"
+          class="question-card__bookmarkt"
+        />
+        <p class="question-card__answer" data-js="answer-two">
+          To style and layout web pages.
+        </p>
+        <button
+          data-js="answer-button-two"
+          class="question-card__answer-button"
+        >
+          Show Answer
+        </button>
+        ​
+        <ul class="question-card__tag-list">
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link html"
+              >#HTML</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link css"
+              >#CSS</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link flexbox"
+              >#Flexbox</a
+            >
+          </li>
+        </ul>
+        <!-- Answer: To style and layout web pages. -->
+      </article>
+      <article class="question-card">
+        <h4 class="question-card__question">
+          What is the syntax for commenting in HTML?
+        </h4>
+        <img
+          src="assets/icons8-add-bookmark.svg"
+          alt="bookmarkt logo"
+          class="question-card__bookmarkt"
+        />
+        <p class="question-card__answer" data-js="answer-three">
+          CONTENT
+          <!-- <pre class="question-card__answer__code" hidden>&lt;!-- comment here --&gt;</pre> -->
+        </p>
+        ​
+        <!-- speziall case here above to JS-another structure!!! I have a pre inside the p!! -->
+        <button
+          onclick
+          type="button"
+          data-js="answer-button-three"
+          class="question-card__answer-button"
+        >
+          Show Answer
+        </button>
+        <ul class="question-card__tag-list">
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link html"
+              >#HTML</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link css"
+              >#CSS</a
+            >
+          </li>
+          <li class="question-card__tag-list__list-item">
+            <a href="#" class="question-card__tag-list__list-item_link flexbox"
+              >#Flexbox</a
+            >
+          </li>
+        </ul>
+        <!-- Answer:-->
+        <!--comment here -->
+      </article>
     </main>
     <footer>
       <nav class="nav-bar">
@@ -262,5 +159,4 @@
       </nav>
     </footer>
   </body>
-
 </html>
