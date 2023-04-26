@@ -1,13 +1,13 @@
 // glogal js
 
-const body = document.querySelector('[data-js="js-body"]');
-const answerButton = document.querySelector();
-// user page: darkmode switch
-const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
+// const body = document.querySelector('[data-js="js-body"]');
 
-toggleDarkmode.addEventListener("click", () => {
-  body.classList.toggle("dark");
-});
+// // user page: darkmode switch
+// const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
+
+// toggleDarkmode.addEventListener("click", () => {
+//   body.classList.toggle("dark");
+// });
 
 //to  check:
 // icon user in weis machen
@@ -19,7 +19,8 @@ toggleDarkmode.addEventListener("click", () => {
 // Warning speziall case  to JS-another structure!!! I have a pre inside the p!! in question 3 and 4 -->
 
 const answerOne = document.querySelector('[data-js="answer-one"]');
- 
-answerOne.addEventListener("click", () =>  {
-  answerOne.classList.toggle("hidden");
-}); 
+const answerButton = document.querySelector('[data-js="answer-button-one"]');
+
+answerButton.addEventListener("click", () => {
+  answerOne.classList.remove("hidden");
+});
