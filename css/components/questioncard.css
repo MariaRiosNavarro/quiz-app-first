@@ -59,10 +59,11 @@
 /* add style to the answer p */
 
 .question-card__answer--hidden {
-  display: none;
+  display: block;
 }
 
 .question-card__answer {
+  display: none;
   font-weight: 30;
   padding: 0.4rem;
   font-size: small;
