@@ -73,7 +73,9 @@ main {
   font-size: small;
   background-color: var(--nav-bg-color-secundary);
   color: white;
-}main {
+}
+
+main {
   margin-top: 100px;
 }
 

@@ -1,4 +1,4 @@
-/* Styles UserPage
+/* Styles UserPage */
 
 .user-card,
 .settings-card {
@@ -62,7 +62,7 @@
 /*Dark Mode Funktion Styles*/
 /*The label-Element */
 /*To set the round button with position:absolute in the next step */
-/* 
+
 .dark {
   background-color: black;
   color: white;
@@ -84,7 +84,7 @@
   left: 4rem;
 }
 /* The grey background of the switch */
-/* 
+
 .settings-card__switch-label span {
   position: absolute;
   background-color: #ccc;
@@ -95,10 +95,13 @@
   right: 0;
   bottom: 0;
   transition: background-color 0.4s;
-} */
+}
+*/
 
 /* The circular button in the switch */
-/* .settings-card__switch-label span::before {
+
+
+ .settings-card__switch-label span::before {
   background-color: var(--nav-bg-color);
   border-radius: 50%;
   content: "";
@@ -107,33 +110,36 @@
   bottom: 4px;
   height: 26px;
   width: 26px;
-} */
+}
 
 /* To make the button move to the right when clicked, the checkbox is used. The background of the button turns black when clicked and the round button moves to the right. */
-/* input:checked + span {
+
+input:checked + span {
   background-color: black;
 }
 
 input:checked + span::before {
   transform: translateX(30px);
-} */
+}
 
-/* The input element of the switch must still be hidden
+/* The input element of the switch must still be hidden*/
+
 .settings-card__switch-label input {
   display: none;
 }
 
 /* However, to also change the text setting to the switch, the switch from display: inline-block becomes a grid container with two grid elements in a grid-template-area. */
-/* .settings-card__switch-label {
+
+.settings-card__switch-label {
   position: relative;
   display: grid;
   grid-template-columns: 230px 64px;
   grid-template-rows: 34px;
   grid-template-areas: "settings switch";
-}  */
+}
 
 /* Assign the second grid-area (switch) to the switch and define the behaviour in the :checked state. */
-/* 
+
 .settings-card__switch-label span {
   background-color: #ccc;
   transition: 0.4s;
@@ -152,4 +158,4 @@ input:checked + p::before {
 
 input:checked ~ p::after {
   content: " ON";
-} */ */ */
+}
