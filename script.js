@@ -18,15 +18,3 @@ toggleDarkmode.addEventListener("click", () => {
 
 //--------------Question-answer js--------------------------
 
-// Warning speziall in question 3 and 4 _ JS-another structure!!! I have a pre inside the p!! in question 3 and 4 -->
-
-// ???????WHY THAT DOESNT WORK?????????
-
-const answerOne = document.querySelector('[data-js="answer-one"]');
-const answerButton = document.querySelector('[data-js="answer-button-one"]');
-
-answerButton.addEventListener("click", () => {
-  answerOne.classList.toggle("question-card__answer--hidden");
-});
-
-// Allready done: check the script @ header (everything ok, dark mode works )
