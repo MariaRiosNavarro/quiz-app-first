@@ -4,9 +4,9 @@ const body = document.querySelector('[data-js="js-body"]');
 
 // ------------user page: darkmode switch--------------
 
-const toggleDarkmode = document.querySelector('[data-js="switch-dark"]');
+const darkModeToggle = document.querySelector('[data-js="switch-dark"]');
 
-toggleDarkmode.addEventListener("click", () => {
+darkModeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");
 });
 
