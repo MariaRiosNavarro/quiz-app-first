@@ -25,3 +25,6 @@ const answerButton = document.querySelector('[data-js="answer-button-one"]');
 answerButton.addEventListener("click", () => {
   answerOne.classList.toggle("hidden");
 });
+
+
+// why doesnt work???
