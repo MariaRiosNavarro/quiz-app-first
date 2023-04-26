@@ -57,3 +57,15 @@
 }
 
 /* add style to the hidden answer p */
+
+.question-card__answer--hidden {
+  display: none;
+}
+
+.question-card__answer {
+  font-weight: 30;
+  padding: 0.4rem;
+  font-size: small;
+  background-color: var(--nav-bg-color-secundary);
+  color: white;
+}
