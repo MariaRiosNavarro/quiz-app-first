@@ -23,3 +23,5 @@ answerButtonThree.addEventListener("click", () => {
   console.log("show answer");
   thirdAnswer.classList.toggle("question-card__answer--hidden");
 });
+
+console.log("hello");
