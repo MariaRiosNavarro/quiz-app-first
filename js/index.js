@@ -1,4 +1,3 @@
-
 // //--------------Question-answer js--------------------------
 
 const answerButtonOne = document.querySelector('[data-js="answer-button-one"]');
