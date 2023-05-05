@@ -1,4 +1,4 @@
-// //--------------Question-answer js--------------------------
+//--------------Question-answer js--------------------------
 
 const answerButtonOne = document.querySelector('[data-js="answer-button-one"]');
 const answerButtonTwo = document.querySelector('[data-js="answer-button-two"]');
